@@ -1,0 +1,204 @@
+<!-- MHonArc v2.6.16 -->
+<!--X-Subject: Re: [pygame] Split screen question (newbie) -->
+<!--X-From-R13: [haqvny 82 <zhaqvny82Ntznvy.pbz> -->
+<!--X-Date: Thu, 22 Nov 2007 03:32:07 &#45;0500 (EST) -->
+<!--X-Message-Id: A78C16CA&#45;4F18&#45;4F28&#45;8A89&#45;DF7F5822B509@gmail.com -->
+<!--X-Content-Type: text/plain -->
+<!--X-Reference: 5548FBF2&#45;7DE2&#45;4F1B&#45;97C6&#45;A1FC698AB68F@gmail.com -->
+<!--X-Reference: 911d1dbb057886ca11d5687cc34535d9@xepher.net -->
+<!--X-Reference: 94e10adf0711210828p4dba25f1w9cfd8a1c8e1048ea@mail.gmail.com -->
+<!--X-Reference: 25D399CD&#45;BEF0&#45;4076&#45;A6DC&#45;8BE0A51DE50D@pandora.com -->
+<!--X-Reference: a62fab400711211018m13750cc8kf5739d216a2fb617@mail.gmail.com -->
+<!--X-Reference: ba3c83a10711211119m20907675h251f67b2a99ba37e@mail.gmail.com -->
+<!--X-Reference: A5B52422&#45;9802&#45;4C09&#45;A928&#45;AE0A798EC411@pandora.com -->
+<!--X-Reference: 4744E1F6.9050309@xepher.net -->
+<!--X-Reference: F4C9F373&#45;255C&#45;452A&#45;A7C1&#45;ADE539B46E26@pandora.com -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Re: [pygame] Split screen question (newbie)</title>
+</head>
+<body>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<hr>
+[<a href="msg00216.html">Author Prev</a>][<a href="msg00268.html">Author Next</a>][<a href="msg00232.html">Thread Prev</a>][<a href="msg00236.html">Thread Next</a>][<a href="maillist.html#00233">Author Index</a>][<a href="threads.html#00233">Thread Index</a>]
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<h1>Re: [pygame] Split screen question (newbie)</h1>
+<hr>
+<!--X-Subject-Header-End-->
+<!--X-Head-of-Message-->
+<ul>
+<li><em>To</em>: <a href="mailto:pygame-users@DOMAIN.HIDDEN">pygame-users@xxxxxxxx</a></li>
+<li><em>Subject</em>: Re: [pygame] Split screen question (newbie)</li>
+<li><em>From</em>: Mundial 82 &lt;<a href="mailto:mundial82@DOMAIN.HIDDEN">mundial82@xxxxxxxxx</a>&gt;</li>
+<li><em>Date</em>: Thu, 22 Nov 2007 09:32:05 +0100</li>
+<li><em>Delivered-to</em>: <a href="mailto:archiver@DOMAIN.HIDDEN">archiver@xxxxxxxx</a></li>
+<li><em>Delivered-to</em>: <a href="mailto:pygame-users-outgoing@DOMAIN.HIDDEN">pygame-users-outgoing@xxxxxxxx</a></li>
+<li><em>Delivered-to</em>: <a href="mailto:pygame-users@DOMAIN.HIDDEN">pygame-users@xxxxxxxx</a></li>
+<li><em>Delivery-date</em>: Thu, 22 Nov 2007 03:32:14 -0500</li>
+<li><em>Dkim-signature</em>: v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=gamma;        h=domainkey-signature:received:received:mime-version:in-reply-to:references:content-type:message-id:content-transfer-encoding:from:subject:date:to:x-mailer;        bh=OlKoHYIMZNwrGX3FhVfgkHwPp+eEkHCS6VA/ETAMD84=;        b=j2HLwxCaxSAIoFXXslZ9FFcB/uFQS59zBbIi8FiWUBueJAZuWR2Jx5Ea/XBCiNfVXZpnFhljEnGdqQJhRV31hI1yw/LW6DJe6zX0f4WIR1ftdDzUIds1DGTcr4ZfbjYetyNxuHiJbhoUYxxSMro20nqrlPTYPzXQjH4kfeYKpPY=</li>
+<li><em>Domainkey-signature</em>: a=rsa-sha1; c=nofws;        d=gmail.com; s=gamma;        h=received:mime-version:in-reply-to:references:content-type:message-id:content-transfer-encoding:from:subject:date:to:x-mailer;        b=VvFwObZWG2VldMYBiE9PXNXh/b1bkEFPZjsiQwHXFmYN+oJmICBjdZSNBbFGQDnUDcEkG3c/I9W0d/aEU63n/Iaraqn5ZEPH8rEdG6U/johthd+wZ3rdAK+aDMivmYoCYF6jUr3a8f73FR4LQ0ffvsYLZ4ktUrGXSJ10F2l6+/M=</li>
+<li><em>In-reply-to</em>: &lt;<a href="mailto:F4C9F373-255C-452A-A7C1-ADE539B46E26@DOMAIN.HIDDEN">F4C9F373-255C-452A-A7C1-ADE539B46E26@xxxxxxxxxxx</a>&gt;</li>
+<li><em>References</em>: &lt;<a href="mailto:5548FBF2-7DE2-4F1B-97C6-A1FC698AB68F@DOMAIN.HIDDEN">5548FBF2-7DE2-4F1B-97C6-A1FC698AB68F@xxxxxxxxx</a>&gt; &lt;<a href="mailto:911d1dbb057886ca11d5687cc34535d9@DOMAIN.HIDDEN">911d1dbb057886ca11d5687cc34535d9@xxxxxxxxxx</a>&gt; &lt;<a href="mailto:94e10adf0711210828p4dba25f1w9cfd8a1c8e1048ea@DOMAIN.HIDDEN">94e10adf0711210828p4dba25f1w9cfd8a1c8e1048ea@xxxxxxxxxxxxxx</a>&gt; &lt;<a href="mailto:25D399CD-BEF0-4076-A6DC-8BE0A51DE50D@DOMAIN.HIDDEN">25D399CD-BEF0-4076-A6DC-8BE0A51DE50D@xxxxxxxxxxx</a>&gt; &lt;<a href="mailto:a62fab400711211018m13750cc8kf5739d216a2fb617@DOMAIN.HIDDEN">a62fab400711211018m13750cc8kf5739d216a2fb617@xxxxxxxxxxxxxx</a>&gt; &lt;<a href="mailto:ba3c83a10711211119m20907675h251f67b2a99ba37e@DOMAIN.HIDDEN">ba3c83a10711211119m20907675h251f67b2a99ba37e@xxxxxxxxxxxxxx</a>&gt; &lt;<a href="mailto:A5B52422-9802-4C09-A928-AE0A798EC411@DOMAIN.HIDDEN">A5B52422-9802-4C09-A928-AE0A798EC411@xxxxxxxxxxx</a>&gt; (sfid-20071121_193155_465655_FFFFFFFFFE4F1F64) &lt;<a href="mailto:4744E1F6.9050309@DOMAIN.HIDDEN">4744E1F6.9050309@xxxxxxxxxx</a>&gt; &lt;<a href="mailto:F4C9F373-255C-452A-A7C1-ADE539B46E26@DOMAIN.HIDDEN">F4C9F373-255C-452A-A7C1-ADE539B46E26@xxxxxxxxxxx</a>&gt;</li>
+<li><em>Reply-to</em>: <a href="mailto:pygame-users@DOMAIN.HIDDEN">pygame-users@xxxxxxxx</a></li>
+<li><em>Sender</em>: <a href="mailto:owner-pygame-users@DOMAIN.HIDDEN">owner-pygame-users@xxxxxxxx</a></li>
+</ul>
+<!--X-Head-of-Message-End-->
+<!--X-Head-Body-Sep-Begin-->
+<hr>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<pre style="margin: 0em;">
+Hi all,
+
+First, thanks a lot for all the help!
+</pre><tt>Ups, now I feel some performance anxiety :) As soon as my little  
+</tt><tt>artsy fartsy experiment is ready, I will share it for feedback. But,  
+</tt><tt>since I am a noob and this is my first &quot;original IP&quot; ;) it may take a  
+</tt><tt>while to figure out the implementation of the basic mechanics.
+</tt><tt>As for the subsurfaces explanation - thanks a lot! that makes a lot  
+</tt><tt>of sense :)
+</tt><pre style="margin: 0em;">
+
+cheers
+
+Naranjito
+
+
+On Nov 22, 2007, at 3:28 AM, Casey Duncan wrote:
+
+</pre><blockquote style="border-left: #5555EE solid 0.2em; margin: 0em; padding-left: 0.85em"><pre style="margin: 0em;">
+On Nov 21, 2007, at 5:57 PM, Kris Schnee wrote:
+</pre><blockquote style="border-left: #5555EE solid 0.2em; margin: 0em; padding-left: 0.85em"><pre style="margin: 0em;">
+[..]
+With subsurfaces, eh? I was thinking more like:
+&lt;code&gt;
+w,h = SCREEN_SIZE ## eg. (800,600)
+top_screen = pygame.surface.Surface((w,h/2))
+bot_screen = pygame.surface.Surface((w,h/2))
+
+def Draw():
+</pre><tt>    DrawPlayerOneScreen(top_screen) ## Draw game stuff onto these  
+</tt><tt>surfaces
+</tt><pre style="margin: 0em;">
+    DrawPlayerTwoScreen(bot_screen)
+    screen.blit(top_screen,(0,0))
+    screen.blit(top_screen,(0,h/2))
+    pygame.display.update()
+&lt;/code&gt;
+
+What's the purpose of using subsurfaces? I don't understand those.
+</pre></blockquote><pre style="margin: 0em;">
+
+If you use subsurfaces, you don't need these lines at all:
+
+</pre><blockquote style="border-left: #5555EE solid 0.2em; margin: 0em; padding-left: 0.85em"><pre style="margin: 0em;">
+    screen.blit(top_screen,(0,0))
+    screen.blit(top_screen,(0,h/2))
+</pre></blockquote><pre style="margin: 0em;">
+
+</pre><tt>Because when you blit to the subsurfaces, you are also blitting to  
+</tt><tt>the screen (because subsurfaces share pixel data with their  
+</tt><tt>parent). It means the system does less work and you use less  
+</tt><tt>memory, but the effect is the same.
+</tt><pre style="margin: 0em;">
+
+-Casey
+
+</pre></blockquote><pre style="margin: 0em;">
+
+</pre>
+<!--X-Body-of-Message-End-->
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<hr>
+<ul><li><strong>Follow-Ups</strong>:
+<ul>
+<li><strong><a name="00236" href="msg00236.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Patrick Mullen</li></ul></li>
+</ul></li></ul>
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<ul><li><strong>References</strong>:
+<ul>
+<li><strong><a name="00216" href="msg00216.html">[pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Mundial 82</li></ul></li>
+<li><strong><a name="00220" href="msg00220.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> kschnee</li></ul></li>
+<li><strong><a name="00221" href="msg00221.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Dan Krol</li></ul></li>
+<li><strong><a name="00222" href="msg00222.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Casey Duncan</li></ul></li>
+<li><strong><a name="00223" href="msg00223.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Ian Mallett</li></ul></li>
+<li><strong><a name="00227" href="msg00227.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Miguel Sicart</li></ul></li>
+<li><strong><a name="00228" href="msg00228.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Casey Duncan</li></ul></li>
+<li><strong><a name="00231" href="msg00231.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Kris Schnee</li></ul></li>
+<li><strong><a name="00232" href="msg00232.html">Re: [pygame] Split screen question (newbie)</a></strong>
+<ul><li><em>From:</em> Casey Duncan</li></ul></li>
+</ul></li></ul>
+<!--X-References-End-->
+<!--X-BotPNI-->
+<ul>
+<li>Prev by Author:
+<strong><a href="msg00216.html">[pygame] Split screen question (newbie)</a></strong>
+</li>
+<li>Next by Author:
+<strong><a href="msg00268.html">Re: [pygame] A bunch of newbie questions</a></strong>
+</li>
+<li>Previous by thread:
+<strong><a href="msg00232.html">Re: [pygame] Split screen question (newbie)</a></strong>
+</li>
+<li>Next by thread:
+<strong><a href="msg00236.html">Re: [pygame] Split screen question (newbie)</a></strong>
+</li>
+<li>Index(es):
+<ul>
+<li><a href="maillist.html#00233"><strong>Author</strong></a></li>
+<li><a href="threads.html#00233"><strong>Thread</strong></a></li>
+</ul>
+</li>
+</ul>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</body>
+</html>
+ê@hK2ë      ^‰Ÿê^‰ŸëA‡I´^’Új   >    :https://archives.seul.org/pygame/users/Nov-2007/msg00233.html necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 05 Apr 2020 09:07:55 GMT
+Server: Apache/2.2.15 (Red Hat)
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=15768000
+Last-Modified: Thu, 29 Nov 2007 09:25:48 GMT
+ETag: "a65a68-2649-4400de6379f00"
+Accept-Ranges: bytes
+Content-Length: 9801
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self';
+Referrer-Policy: no-referrer
+Content-Type: text/html; charset=UTF-8
+ original-response-headers Date: Sun, 05 Apr 2020 09:07:55 GMT
+Server: Apache/2.2.15 (Red Hat)
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=15768000
+Last-Modified: Thu, 29 Nov 2007 09:25:48 GMT
+ETag: "a65a68-2649-4400de6379f00"
+Accept-Ranges: bytes
+Content-Length: 9801
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'self';
+Referrer-Policy: no-referrer
+Connection: close
+Content-Type: text/html; charset=UTF-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 791 net-response-time-onstop 794   &I

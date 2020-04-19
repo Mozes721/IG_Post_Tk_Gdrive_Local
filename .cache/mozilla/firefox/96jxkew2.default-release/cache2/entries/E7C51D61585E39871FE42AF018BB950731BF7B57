@@ -1,0 +1,786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<title>How to create a split screen - Pygame - python-3.x</title>
+<meta Name="keywords"    Content="How to create a split screen - Pygame - python-3.x">
+<meta Name="description" Content="How to create a split screen - Pygame - python-3.x">
+
+<link href="//jquery.develop-bugs.com/css/websim.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+<div>
+	
+	<div id="header">
+		<h1>Fix Bugs</h1>
+		<h2>jquery sql c windows arrays</h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="first"><a href="">Home</a></li>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+	</div>
+
+<div id="content">
+
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+
+
+<div id="primaryContentDiv">
+	<blockquote>
+	<h2><a href="/article/10096269/How+to+create+a+split+screen+-+Pygame">How to create a split screen - Pygame  -  python-3.x</a></h2>
+	</blockquote>
+
+	
+		
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="6542059522"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+			
+		
+		<h4><pre>I have a project where im trying to make a 2-player game with a split screen. I want each of the splits to display the same map but at different positions.
+Ive looked around on the internet but and i found something, but i could not get it to work.
+The px_cam is supposed to be the view of both splits.
+def game():
+screen_res = (SCREEN_W ,SCREEN_H)
+pg.init()
+canvas = pg.Surface((screen_res))
+screen = pg.display.set_mode(screen_res)
+clock = pg.time.Clock()
+p1_cam = pg.Rect(0,0,SCREEN_W/2,SCREEN_H/2)
+p2_cam = pg.Rect(0,SCREEN_H/2,0,SCREEN_H/2)
+p1 = Player(screen)
+maze = Map(screen)
+start = Start(screen)
+start.loop()
+while True:
+for event in pg.event.get():
+if event.type == pg.QUIT or (event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE):
+exit()
+pg.draw.rect(screen, (0,0,0), (0, 0, screen.get_width(), screen.get_height()))
+screen.blit(canvas, (0,0), p1_cam)
+screen.blit(canvas, (0,0), p2_cam)
+time_passed = clock.tick(60) # limit to 60FPS
+time_passed_seconds = time_passed / 1000.0 # convert to seconds
+maze.draw()
+p1.move_keys()
+p1.move()
+p1.draw()
+pg.draw.line(screen, WHITE, (0,SCREEN_H/2), (SCREEN_W, SCREEN_H/2), 10)
+pg.display.update()
+if __name__ == &#039;__main__&#039;:
+game()</pre></h4>
+		
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="1470641768"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+		
+	
+</div>
+
+
+<div id="primaryContentDiv">
+	<blockquote>
+	<h3>Related</h3>
+	</blockquote>
+
+	
+		<div id="primaryContentDiv">
+			<h3><a href="/article/12105752/How+can+i+investigate+sprite+crash+in+a+keyboard+game%3f">How can i investigate sprite crash in a keyboard game?</a></h3>			
+			
+			
+				<pre>import pygame
+import random
+pygame.init()
+white = (255,255,255)
+class Block(pygame.sprite.Sprite):
+def __init__(self,color,width,height):
+pygame.sprite.Sprite.__init__(self)
+self.image = pygame.Surface([width, height])
+self.image.fill(color)
+self.rect = self.image.get_rect()
+screen = pygame.display.set_mode([800,450])
+all_about_sprites_list = pygame.sprite.Group()
+about_block_list = pygame.sprite.Group()
+for i in range(5):
+block = Block((0,0,200), 20, 15)
+block.rect.x = random.randrange(800)
+block.rect.y = random.randrange(450)
+about_block_list.add(block)
+all_about_sprites_list.add(block)
+player = Block((100,100,1), 20, 15)
+all_about_sprites_list.add(player)
+done=False
+Blue = True
+clock=pygame.time.Clock()
+score = 0
+while done == False:
+for event in pygame.event.get():
+if event.type == pygame.QUIT:
+done=True
+if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+Blue = not Blue
+pressed = pygame.key.get_pressed()
+if pressed[pygame.K_UP]: y -= 3
+if pressed[pygame.K_DOWN]: y += 3
+if pressed[pygame.K_LEFT]: x -= 3
+if pressed[pygame.K_RIGHT]: x += 3
+screen.fill((0,0,0))
+blocks_hit_list = pygame.sprite.spritecollide(player,about_block_list, True)
+if len(blocks_hit_list) &gt; 0:
+score +=len(blocks_hit_list)
+print(score)
+all_about_sprites_list.draw(screen)
+if Blue: color = (0,128,255)
+else: color = (255,255,255)
+x = 200
+y = 150
+pygame.draw.rect(screen, color, pygame.Rect(x,y,20,15))
+clock.tick(45)
+pygame.display.flip()
+I can investigate sprite conflicts with your mouse.
+so I have created a game to play on the keyboard with reference to the pygame docs.I succeeded that Playing the game with keyboard navigation keys succeeded. However, the Sprite crash Survey has not been implemented. However, the sprite crash investigation has not been implemented....How can I do this?</pre>
+			
+			
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="9837067009"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+			
+			
+			
+			
+			
+			
+
+			
+		</div>
+	
+		<div id="primaryContentDiv">
+			<h3><a href="/article/12229636/Pygame%2c+my+sprite+looks+wierd">Pygame, my sprite looks wierd</a></h3>			
+			
+			
+				<pre>I&#039;m working on this project for Literature class and I&#039;m planning on making a game with pygame based of this book we were reading.
+Here&#039;s the code:
+import pygame, sys
+from pygame.locals import *
+pygame.init()
+FPS = 30
+fpsClock = pygame.time.Clock()
+DISPLAYSURF = pygame.display.set_mode((400, 300), 0, 32)
+pygame.display.set_caption(&#039;Animation&#039;)
+WHITE = (255, 255, 255)
+romeo = pygame.image.load(&#039;rome.png.png&#039;)
+romeo = pygame.transform.scale(romeo, (50, 50))
+romeox = 10
+romeoy = 10
+while True: # the main game loop
+keys = pygame.key.get_pressed()
+if keys[K_RIGHT]:
+romeox += 5
+if keys[K_LEFT]:
+romeox -= 5
+if keys[K_UP]:
+romeoy -=5
+if keys[K_DOWN]:
+romeoy += 5
+for event in pygame.event.get():
+if event.type == QUIT:
+pygame.quit()
+sys.exit()
+DISPLAYSURF.blit(romeo, (romeox, romeoy))
+pygame.display.update()
+fpsClock.tick(FPS)
+Unfortunately, the sprite seems to leave a trail of it&#039;s own copies while it moves.
+Here
+Please help!
+</pre>
+			
+				<pre>
+Seems like you forgot to clear the screen every iteration
+# Fill surface with black color
+DISPLAYSURF.fill((0, 0, 0))
+Insert it above the line that blits the sprite onto the screen.</pre>
+			
+			
+			
+			
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="9718890773"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>				
+			
+			
+			
+			
+			
+
+			
+		</div>
+	
+		<div id="primaryContentDiv">
+			<h3><a href="/article/13048650/can't+stop+program+randomizing.+Pygame">can&#039;t stop program randomizing. Pygame</a></h3>			
+			
+			
+				<pre>Ye i know this is quite noob question but problem is this.
+i&#039;m making a game and i wanna randomize stars to a huge space area
+But results that i get are:
+The space keeps recaculating places of stars so everything moves.
+It Shows only 1 star on the upper left corner of window.
+Here is the full code:
+import os
+import pygame
+from pygame.locals import *
+import random
+gstars = 500
+gstarmax = 0
+red = (255,0,0)
+yellow = (240,250,60)
+timer = 0
+size = [1600, 1000]
+screen = pygame.display.set_mode((1600, 1000), HWSURFACE | DOUBLEBUF | RESIZABLE)
+pygame.display.set_caption(&#039;planet system test&#039;)
+clock = pygame.time.Clock()
+area = pygame.image.load(&#034;screenMonitor.png&#034;)
+done = False
+while done == False:
+pygame.event.pump()
+mouse_x, mouse_y = pygame.mouse.get_pos()
+timer += 1
+if timer &gt; 99:
+timer = 0
+screen.fill((0,0,0))
+pygame.draw.rect(screen, red, (20, 20, 1350, 480), 2)
+pygame.draw.rect(screen,yellow,(2,2,2,2),2)
+go = True
+if go == True:
+for i in range(gstars):
+s1 = random.randrange(1,1600)
+s2 = random.randrange(1,1000)
+colorSelect = random.randrange(0,5)
+if colorSelect == 1:
+yellow = (240,250,60)
+if colorSelect == 2:
+yellow = (249,173,60)
+if colorSelect == 3:
+yellow = (226,43,68)
+if colorSelect == 4:
+yellow = (52,173,84)
+go = False
+pygame.draw.rect(screen,yellow,(2+s1,2+s2,2,2),2)
+pygame.display.flip()
+clock.tick(30)
+pygame.quit()
+</pre>
+			
+				<pre>
+The trouble is in the main/event loop.
+You put the code for position your stars inside the main loop. Since it is randomize at every iteration, it will move.
+I remove the go = False that probably cause the error to display only one star.
+In the following code, I create a list of star that have the position in indices 0 and 1, and the tuple of the color in 2.
+The tuple of color is randomly choose using the random.choice(Sequence) function. https://docs.python.org/2/library/random.html
+import pygame
+from pygame import *
+import random
+gstars = 500
+gstarmax = 0
+red = (255,0,0)
+yellow = (240,250,60)
+timer = 0
+size = [1600, 1000]
+pygame.init()
+pygame.display.set_caption(&#039;planet system test&#039;)
+screen = pygame.display.set_mode((size[0], size[1]))
+clock = pygame.time.Clock()
+area = pygame.image.load(&#034;screenMonitor.png&#034;)
+color = ((240,250,60),(249,173,60),(226,43,68),(52,173,84))
+stars = []
+for i in range(gstars):
+s1 = random.randrange(1,1600)
+s2 = random.randrange(1,1000)
+starcolor = random.choice(color)
+stars.append([s1, s2, starcolor])
+done = False
+while done == False:
+for event in pygame.event.get():
+if event.type == pygame.QUIT: #Quit the game if X
+done = False
+screen.fill(0)
+pygame.draw.rect(screen, red, (20, 20, 1350, 480), 2)
+pygame.draw.rect(screen,yellow,(2,2,2,2),2)
+for star in stars:
+pygame.draw.rect(screen,star[2],(2+star[0],2+star[1],2,2),2)
+pygame.display.flip()
+clock.tick(30)
+EDIT : Correct the code following the advice of Ted Klein Bergman.</pre>
+			
+			
+			
+			
+			
+			
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="6298520518"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+			
+			
+
+			
+		</div>
+	
+		<div id="primaryContentDiv">
+			<h3><a href="/article/13862995/Python++Pygame+blitting+multiple+image+to+list+coordinates">Python /Pygame blitting multiple image to list coordinates</a></h3>			
+			
+			
+				<pre>So i&#039;m making a space game where you have a open world to explore (A black Screen)
+and i wanna create planets(Blit images to screen) around the universe(from a list).
+This is my code currently
+star = pygame.image.load(&#034;star.png&#034;)
+planets = random.randrange(100,500) #&lt;------#####NOT IMPORTANT#######
+positions = [(300,50),(400,27),(900,55)] #&lt;------
+position = ()
+positions has coorinates where images should be blitted
+but when i blit them
+for position in positions:
+ikkuna.blit(star, position)
+it blits the first one or nothing and does not crash
+why?
+################################################-
+Here is the full code if it helps (there is bits of the finish language in there hope it does not bother)
+&#034;ikkuna = screen (leveys,korkeus) = (width,hight) toiminnassa = in action&#034;
+import pygame
+import random
+import time
+import sys
+import math
+pygame.init()
+White = (255,255,255)
+red = (255,0,0)
+kello = pygame.time.Clock()
+star = pygame.image.load(&#034;star.png&#034;)
+planets = random.randrange(100,500)
+positions = [(300,50)]
+position = ()
+tausta_vari = (255,255,255)
+(leveys, korkeus) = (1000, 1000)
+ikkuna = pygame.display.set_mode((leveys, korkeus))
+pygame.display.set_caption(&#034;SpaceGenerationTest&#034;)
+######################################################################
+toiminnassa = True
+while toiminnassa:
+for event in pygame.event.get():
+if event.type == pygame.QUIT:
+toiminnassa = False
+if event.type == pygame.KEYDOWN:
+if event.key == pygame.K_g:
+print(&#034;Generating World....&#034;)
+print(planets)
+for position in positions:
+ikkuna.blit(star, position)
+print(&#034;hello&#034;)
+</pre>
+			
+				<pre>
+There&#039;s some problems with your code:
+Your not updating the display, which means that all your changes won&#039;t be visible. Use pygame.display.update() or pygame.display.flip() at the end of the game loop to update the screen.
+When you&#039;re mixing English and Finnish it becomes very inconsistent and hard to follow, especially for people who don&#039;t speak Finnish. Try to use English, even when you&#039;re just practicing.
+Your full example only contain one position in the list, thus it&#039;s only creating one star at one position.
+Pressing the &#039;g&#039;-key won&#039;t generate any planets. You might want to introduce a boolean variable like in the example below.
+I changed your code to english and made some adjustment so it&#039;s more consistent.
+import pygame
+import random
+pygame.init()
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+# I changed the background color to black, because I understood it as that is what you want.
+BACKGROUND_COLOR = (0, 0, 0) # tausta_vari
+clock = pygame.time.Clock() # kello
+star = pygame.Surface((32, 32))
+star.fill((255, 255, 255))
+planets = random.randrange(100, 500)
+positions = [(300, 50), (400, 27), (900, 55)]
+WIDTH, HEIGHT = (1000, 1000) # (leveys, korkeus)
+screen = pygame.display.set_mode((WIDTH, HEIGHT)) # ikkuna
+pygame.display.set_caption(&#034;SpaceGenerationTest&#034;)
+display_stars = False
+running = True # toiminnassa
+while running:
+for event in pygame.event.get():
+if event.type == pygame.QUIT:
+running = False
+if event.type == pygame.KEYDOWN:
+if event.key == pygame.K_g:
+print(&#034;Generating World....&#034;)
+print(planets)
+display_stars = True
+screen.fill(BACKGROUND_COLOR)
+if display_stars:
+for position in positions:
+# This will create 3 stars because there&#039;re 3 elements in the list positions.
+# To create more stars you&#039;ll need to add more in the list positions.
+screen.blit(star, position)
+pygame.display.update()
+</pre>
+			
+				<pre>
+Your blitting all your images to the exact same position: positions = [(300, 50)], so the last image covers all the other images up. Also, you may not know this, but to display anything in pygame you have to either call pygame.display.flip() or pygame.display.update() after you finish drawing. I made a few revisions to your code, so the stars should show-up:
+import pygame
+import random
+import time
+import sys
+import math
+def main():
+pygame.init()
+White = (255,255,255)
+red = (255,0,0)
+kello = pygame.time.Clock()
+star = pygame.image.load(&#034;star.png&#034;)
+planets = random.randrange(100,500)
+positions = [(300,50), (310, 60), (320, 80), (607, 451), (345, 231)]
+tausta_vari = (255,255,255)
+(leveys, korkeus) = (1000, 1000)
+ikkuna = pygame.display.set_mode((leveys, korkeus))
+pygame.display.set_caption(&#034;SpaceGenerationTest&#034;)
+######################################################################
+toiminnassa = True
+while toiminnassa:
+for event in pygame.event.get():
+if event.type == pygame.QUIT:
+toiminnassa = False
+if event.type == pygame.KEYDOWN:
+if event.key == pygame.K_g:
+print(&#034;Generating World....&#034;)
+print(planets)
+ikkuna.fill((0, 0, 0)) # fill the screen with black
+for position in positions:
+ikkuna.blit(star, position)
+print(&#034;Hello&#034;)
+pygame.display.flip() # updating the screen
+if __name__ == &#039;__main__&#039;: # are we running this .py file as the main program?
+try:
+main()
+finally:
+pg.quit()
+quit()
+~Mr.Python</pre>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="9146801860"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+
+			
+		</div>
+	
+		<div id="primaryContentDiv">
+			<h3><a href="/article/17096198/I+can't+make+my+player+shoot+on+Pygame+because+it+says+%3a+'float'+object+has+no+attribute+'__getitem__'">I can&#039;t make my player shoot on Pygame because it says : &#039;float&#039; object has no attribute &#039;__getitem__&#039;</a></h3>			
+			
+			
+				<pre>Well. All I wanted is to shoot some bullets in my game. I tried so hard but I can&#039;t!
+First I store the bullets angle and position in bullets_array&#039;s list. Second, I gave to it velocity by &#039;sin&#039; and &#039;cos&#039; and I limited its motion on 640px and 480px in a loop. Then I displayed it on player_x, player_y.
+It was supposed to start on player_x, player_y, to walk by cos and sin laws and to destroy on the bordelines of the screen.
+But it is shown the following sentence:
+line 53
+vel_x = math.cos(bullet[0])*10 TypeError: &#039;float&#039; object has no
+attribute &#039;getitem&#039;
+Here is the code.
+#
+# Title: Shoot The Zombies
+# Author(s): John Redbeard, (&#034;http://john-redbeard.tumblr.com/&#034;)
+#
+import pygame
+from pygame.locals import *
+import math
+# Initiate Pygame
+pygame.init()
+width, height = 640, 480
+screen=pygame.display.set_mode((width, height))
+pygame.display.set_caption(&#034;Shoot the Zombies&#034;)
+fps = 60
+fpsclock = pygame.time.Clock()
+# Load images
+player = pygame.image.load(&#034;images/player.png&#034;)
+player_x = 100
+player_y = 100
+posplayer_x = 0
+posplayer_y = 0
+grass = pygame.image.load(&#034;images/grass.png&#034;)
+bullet = pygame.image.load(&#034;images/bullet.png&#034;)
+bullets_array = []
+target = pygame.image.load(&#034;images/target.png&#034;)
+# Main Loop Game
+while True:
+pygame.mouse.set_visible(False)
+screen.fill(False)
+# Load on screen the grass in isometric way
+for x in range(width/grass.get_width()+1):
+for y in range(height/grass.get_height()+1):
+screen.blit(grass,(x*100,y*100))
+# Load on screen the rotated-positioned-player
+mouse_position = pygame.mouse.get_pos()
+angle = math.atan2(mouse_position[0] - player_x, mouse_position[1] - player_y)
+player_rotate = pygame.transform.rotate(player, 360+angle*57.29)
+player_position = (player_x - player_rotate.get_rect().width/2, player_y - player_rotate.get_rect().height/2)
+screen.blit(player_rotate, player_position)
+# load on screen the rotated-posioted-bullets
+for bullet in bullets_array:
+vel_x = math.cos(bullet[0])*10
+vel_y = math.sin(bullet[1])*10
+bullet[0] += vel_x
+bullet[1] += vel_y
+if bullet[0] &gt;640 or bullet[1] &gt; 480:
+bullets_array.remove(bullet)
+bullet1 = pygame.transform.rotate(bullet, 360+angle*57.29)
+screen.blit(bullet1, (player_x, player_y))
+# Load on screen the target
+screen.blit(target, (mouse_position))
+# Display window
+pygame.display.flip()
+# Run events
+for event in pygame.event.get():
+if event.type==pygame.QUIT:
+pygame.quit()
+exit(False)
+# Event: W/A/S/D (Keyboard) moving player
+elif event.type == KEYDOWN:
+if event.key == K_w:
+posplayer_y -= 3
+elif event.key == K_a:
+posplayer_x -= 3
+elif event.key == K_s:
+posplayer_y += 3
+elif event.key == K_d:
+posplayer_x += 3
+elif event.type == KEYUP:
+if event.key == K_w:
+posplayer_y = 0
+elif event.key == K_a:
+posplayer_x = 0
+elif event.key == K_s:
+posplayer_y= 0
+elif event.key == K_d:
+posplayer_x = 0
+# Event: Mouse click shoot the bullet
+elif event.type == MOUSEBUTTONDOWN:
+bullets_array.append(math.atan2(mouse_position[0] - player_x, mouse_position[1] - player_y))
+player_x += posplayer_x
+player_y +=posplayer_y
+fpsclock.tick(fps)
+</pre>
+			
+				<pre>
+You added float values to bullets_array:
+bullets_array.append(math.atan2(mouse_position[0] - player_x, mouse_position[1] - player_y))
+That&#039;s just one math.atan2() call; it produces one floating point value.
+You then on expect there to be two values:
+for bullet in bullets_array:
+vel_x = math.cos(bullet[0])*10
+vel_y = math.sin(bullet[1])*10
+You cannot index a floating point value.
+If you expected there to be two values, you&#039;ll have to create a tuple with two floats, not add just the one float. You certainly did not
+store the bullets angle and position in bullets_array&#039;s list</pre>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+		</div>
+	
+	
+	
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="7817817442"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	
+	
+</div>
+
+
+
+
+
+			</div>
+		</div>
+
+
+		<div id="secondaryContent">
+			<h3>Categories</h3>
+			<ul>
+
+ 
+
+<a href="/category/0/HOME" title="HOME">HOME</a><br><a href="/category/1064/jenkins" title="jenkins">jenkins</a><br><a href="/category/1080/c" title="c">c</a><br><a href="/category/1414/octobercms" title="octobercms">octobercms</a><br><a href="/category/1464/youtrack" title="youtrack">youtrack</a><br><a href="/category/1529/webpack" title="webpack">webpack</a><br><a href="/category/1814/bootstrap-slider" title="bootstrap-slider">bootstrap-slider</a><br><a href="/category/2180/sphinx" title="sphinx">sphinx</a><br><a href="/category/2279/isabelle" title="isabelle">isabelle</a><br><a href="/category/2511/amadeus" title="amadeus">amadeus</a><br><a href="/category/2874/yolo" title="yolo">yolo</a><br><a href="/category/3061/maven-javadoc-plugin" title="maven-javadoc-plugin">maven-javadoc-plugin</a><br><a href="/category/3080/7zip" title="7zip">7zip</a><br><a href="/category/3261/netezza" title="netezza">netezza</a><br><a href="/category/3379/processing" title="processing">processing</a><br><a href="/category/3434/junit5" title="junit5">junit5</a><br><a href="/category/3461/photoeditorsdk" title="photoeditorsdk">photoeditorsdk</a><br><a href="/category/3480/google-cloud-pubsub" title="google-cloud-pubsub">google-cloud-pubsub</a><br><a href="/category/3688/gantt-chart" title="gantt-chart">gantt-chart</a><br><a href="/category/3724/amazon-elasticache" title="amazon-elasticache">amazon-elasticache</a><br><a href="/category/3730/apdu" title="apdu">apdu</a><br><a href="/category/4574/textinput" title="textinput">textinput</a><br><a href="/category/4864/data-protection" title="data-protection">data-protection</a><br><a href="/category/4961/pact-broker" title="pact-broker">pact-broker</a><br><a href="/category/4974/sentora" title="sentora">sentora</a><br><a href="/category/5384/maven-assembly-plugin" title="maven-assembly-plugin">maven-assembly-plugin</a><br><a href="/category/5474/catia" title="catia">catia</a><br><a href="/category/5511/activeadmin" title="activeadmin">activeadmin</a><br><a href="/category/5911/android-actionbar" title="android-actionbar">android-actionbar</a><br><a href="/category/5924/vfs" title="vfs">vfs</a><br><a href="/category/6111/position" title="position">position</a><br><a href="/category/6261/lauterbach" title="lauterbach">lauterbach</a><br><a href="/category/6964/maven-ear-plugin" title="maven-ear-plugin">maven-ear-plugin</a><br><a href="/category/7174/unityads" title="unityads">unityads</a><br><a href="/category/7729/watson" title="watson">watson</a><br><a href="/category/7838/syncthing" title="syncthing">syncthing</a><br><a href="/category/8087/airconsole" title="airconsole">airconsole</a><br><a href="/category/8887/actioncable" title="actioncable">actioncable</a><br><a href="/category/9387/swagger-php" title="swagger-php">swagger-php</a><br><a href="/category/9487/where" title="where">where</a><br><a href="/category/9834/name-resolution" title="name-resolution">name-resolution</a><br><a href="/category/9930/pypdf2" title="pypdf2">pypdf2</a><br><a href="/category/10737/bacon.js" title="bacon.js">bacon.js</a><br><a href="/category/10814/mongomock" title="mongomock">mongomock</a><br><a href="/category/10864/python-2.4" title="python-2.4">python-2.4</a><br><a href="/category/10874/drjava" title="drjava">drjava</a><br><a href="/category/11114/uicontainerview" title="uicontainerview">uicontainerview</a><br><a href="/category/11561/magento-1.6" title="magento-1.6">magento-1.6</a><br><a href="/category/11638/android-ndk-r5" title="android-ndk-r5">android-ndk-r5</a><br><a href="/category/12134/lightning" title="lightning">lightning</a><br><a href="/category/12184/sybase-asa" title="sybase-asa">sybase-asa</a><br><a href="/category/12384/geotagging" title="geotagging">geotagging</a><br><a href="/category/12388/bootswatch" title="bootswatch">bootswatch</a><br><a href="/category/12561/eclipse-fp" title="eclipse-fp">eclipse-fp</a><br><a href="/category/12687/mongoexport" title="mongoexport">mongoexport</a><br><a href="/category/13030/choetl" title="choetl">choetl</a><br><a href="/category/13038/uiapplication" title="uiapplication">uiapplication</a><br><a href="/category/13187/jquery-clone" title="jquery-clone">jquery-clone</a><br><a href="/category/13714/casablanca" title="casablanca">casablanca</a><br><a href="/category/13737/mathdotnet" title="mathdotnet">mathdotnet</a><br><a href="/category/14134/custom-keyboard" title="custom-keyboard">custom-keyboard</a><br><a href="/category/14261/http-status-code-504" title="http-status-code-504">http-status-code-504</a><br><a href="/category/14361/printthis" title="printthis">printthis</a><br><a href="/category/14434/selenium-builder" title="selenium-builder">selenium-builder</a><br><a href="/category/14480/exchange-server-2013" title="exchange-server-2013">exchange-server-2013</a><br><a href="/category/14637/sqf" title="sqf">sqf</a><br><a href="/category/14724/nested-lists" title="nested-lists">nested-lists</a><br><a href="/category/14814/deployit" title="deployit">deployit</a><br><a href="/category/15084/checker-framework" title="checker-framework">checker-framework</a><br><a href="/category/15524/nsubstitute" title="nsubstitute">nsubstitute</a><br><a href="/category/15964/subversive" title="subversive">subversive</a><br><a href="/category/16674/ace-plugin" title="ace-plugin">ace-plugin</a><br><a href="/category/16679/console2" title="console2">console2</a><br><a href="/category/17164/xonsh" title="xonsh">xonsh</a><br><a href="/category/17184/fadein" title="fadein">fadein</a><br><a href="/category/17288/findviewbyid" title="findviewbyid">findviewbyid</a><br><a href="/category/17330/ioexception" title="ioexception">ioexception</a><br><a href="/category/17864/ec2-api-tools" title="ec2-api-tools">ec2-api-tools</a><br><a href="/category/17924/hardware-interface" title="hardware-interface">hardware-interface</a><br><a href="/category/17938/poppler" title="poppler">poppler</a><br><a href="/category/18034/managed-vm" title="managed-vm">managed-vm</a><br><a href="/category/18164/0xdbe" title="0xdbe">0xdbe</a><br><a href="/category/18214/webproject" title="webproject">webproject</a><br><a href="/category/18324/black-box-testing" title="black-box-testing">black-box-testing</a><br><a href="/category/18511/recorder" title="recorder">recorder</a><br><a href="/category/18737/aws-powershell" title="aws-powershell">aws-powershell</a><br><a href="/category/18784/weechat" title="weechat">weechat</a><br><a href="/category/18787/django-filter" title="django-filter">django-filter</a><br><a href="/category/19487/forio-contour" title="forio-contour">forio-contour</a><br><a href="/category/19529/multi-project" title="multi-project">multi-project</a><br><a href="/category/20087/object-role-modeling" title="object-role-modeling">object-role-modeling</a><br><a href="/category/20288/subform" title="subform">subform</a><br><a href="/category/20830/custom-action" title="custom-action">custom-action</a><br><a href="/category/21814/postgresql-performance" title="postgresql-performance">postgresql-performance</a><br><a href="/category/22114/obsolete" title="obsolete">obsolete</a><br><a href="/category/22129/tipsy" title="tipsy">tipsy</a><br><a href="/category/22324/hamachi" title="hamachi">hamachi</a><br><a href="/category/22411/mcpd" title="mcpd">mcpd</a><br><a href="/category/22430/gemstone" title="gemstone">gemstone</a><br><a href="/category/22584/easygui" title="easygui">easygui</a><br><a href="/category/22864/anonymous-types" title="anonymous-types">anonymous-types</a><br><a href="/category/23374/clean-language" title="clean-language">clean-language</a><br><a href="/category/23511/multifile-uploader" title="multifile-uploader">multifile-uploader</a><br><a href="/category/23824/habari" title="habari">habari</a><br><a href="/category/24124/levels" title="levels">levels</a><br><a href="/category/24138/presentmodalviewcontroller" title="presentmodalviewcontroller">presentmodalviewcontro...</a><br>
+
+
+			</ul>
+		</div>
+
+		<div id="tertiaryContent">
+			<h3>Resources</h3>
+			<ul>
+				
+					<li><a href="https://javascript.develop-bugs.com" target="_blank">javascript</a></li>
+				
+					<li><a href="https://java.develop-bugs.com" target="_blank">java</a></li>
+				
+					<li><a href="https://csharp.develop-bugs.com" target="_blank">csharp</a></li>
+				
+					<li><a href="https://php.develop-bugs.com" target="_blank">php</a></li>
+				
+					<li><a href="https://python.develop-bugs.com" target="_blank">python</a></li>
+				
+					<li><a href="https://android.develop-bugs.com" target="_blank">android</a></li>
+				
+					<li><a href="https://jquery.develop-bugs.com" target="_blank">jquery</a></li>
+				
+					<li><a href="https://ruby.develop-bugs.com" target="_blank">ruby</a></li>
+				
+					<li><a href="https://ios.develop-bugs.com" target="_blank">ios</a></li>
+				
+					<li><a href="https://www.develop-bugs.com" target="_blank">html</a></li>
+				
+					<li><a href="https://www.databasedevelop.com" target="_blank">database</a></li>
+				
+					<li><a href="https://java.databasedevelop.com" target="_blank">java</a></li>
+				
+					<li><a href="https://software.databasedevelop.com" target="_blank">software</a></li>
+				
+			</ul>
+			
+<div style="width:160px; height:600px; align: center; text-align: center; border:0px solid red;">
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- sim right 160 600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-4875541507549899"
+     data-ad-slot="2464403747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+			
+		</div>
+
+	<div class="clear"></div>
+</div>
+
+	<div id="footer">
+		<p>Copyright &copy; 2018 www.develop-bugs.com</p>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>Ý½ˆ/E      ^‰ ^‰ 	A‡IÄ^‰    W    :https://jquery.develop-bugs.com/article/10096269/How+to+create+a+split+screen+-+Pygame necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAMwFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAf6MIIH9jCCBt6gAwIBAgISA3BHLe8MDQW9CwJ7pbJNDzPGMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0yMDAyMTEwMDIyMTBaFw0yMDA1MTEwMDIyMTBaMCoxKDAmBgNVBAMTH2phdmFzY3JpcHQuZGV2ZWxvcHJlZmVyZW5jZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4iZrJHe5JUiWp+Ch/WQE5CqBlAPccXvKoiRqT3lpr77AizU6It1OAHsMJRqXR8EuP75SCupFsZ1nEesrxnsJs6Y8O6phCD7ejJAQHS1xroA6UB+Uhm4qm6QL/JIQl2mcIllVTxVx9k2UbsZV49L7cS8y/gykcoiNAMGfFCNWmFd9pekGg8eSIwno1aa2WVgdZsN89OdZzWOOK6PU0rQ6nNak35i1EIpylrGeJdUbH1Bhbt9smIOAmInqzCWcnf16N2U92eN9elWmlFk74SrLySSI6eZ64/A88K1ddPnuaXjiDlu8w7DBzAX7MuJCP05o12R7LmZbGCdB2cVIIgGKjAgMBAAGjggT0MIIE8DAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFFpx72eNo8G/xgGrFO1eSOxFi3BtMB8GA1UdIwQYMBaAFKhKamMEfd265tE5t6ZFZe/zqOyhMG8GCCsGAQUFBwEBBGMwYTAuBggrBgEFBQcwAYYiaHR0cDovL29jc3AuaW50LXgzLmxldHNlbmNyeXB0Lm9yZzAvBggrBgEFBQcwAoYjaHR0cDovL2NlcnQuaW50LXgzLmxldHNlbmNyeXB0Lm9yZy8wggKnBgNVHREEggKeMIICmoIYYW5kcm9pZC5kZXZlbG9wLWJ1Z3MuY29tghxhbmRyb2lkLmRldmVsb3ByZWZlcmVuY2UuY29tghdjc2hhcnAuZGV2ZWxvcC1idWdzLmNvbYIbY3NoYXJwLmRldmVsb3ByZWZlcmVuY2UuY29tghNkYXRhYmFzZWRldmVsb3AuY29tghBkZXZlbG9wLWJ1Z3MuY29tghRkZXZlbG9wcmVmZXJlbmNlLmNvbYIZaHRtbC5kZXZlbG9wcmVmZXJlbmNlLmNvbYIUaW9zLmRldmVsb3AtYnVncy5jb22CGGlvcy5kZXZlbG9wcmVmZXJlbmNlLmNvbYIYamF2YS5kYXRhYmFzZWRldmVsb3AuY29tghVqYXZhLmRldmVsb3AtYnVncy5jb22CGWphdmEuZGV2ZWxvcHJlZmVyZW5jZS5jb22CG2phdmFzY3JpcHQuZGV2ZWxvcC1idWdzLmNvbYIfamF2YXNjcmlwdC5kZXZlbG9wcmVmZXJlbmNlLmNvbYIXanF1ZXJ5LmRldmVsb3AtYnVncy5jb22CG2pxdWVyeS5kZXZlbG9wcmVmZXJlbmNlLmNvbYIUcGhwLmRldmVsb3AtYnVncy5jb22CGHBocC5kZXZlbG9wcmVmZXJlbmNlLmNvbYIXcHl0aG9uLmRldmVsb3AtYnVncy5jb22CG3B5dGhvbi5kZXZlbG9wcmVmZXJlbmNlLmNvbYIVcnVieS5kZXZlbG9wLWJ1Z3MuY29tghxzb2Z0d2FyZS5kYXRhYmFzZWRldmVsb3AuY29tghd3d3cuZGF0YWJhc2VkZXZlbG9wLmNvbYIUd3d3LmRldmVsb3AtYnVncy5jb22CGHd3dy5kZXZlbG9wcmVmZXJlbmNlLmNvbTBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB3APCVpFnyANGCQBAtL5OIjq1L/h1H45nh0DSmsKiqjrJzAAABcDHW3kAAAAQDAEgwRgIhAKy+53t6Tw0GIR/xomhWAUCOhtl93IGTqBHh7mM9b42MAiEA4MKV1RrdqbpVYnrHCQAWPJBhjBncJes744Kz4Ez5lmcAdgAHt1wb5X1o//Gwxh0jFce65ld8V5S3au68YToaadOiHAAAAXAx1t5nAAAEAwBHMEUCIEu5sznSnWeXSvHv6vGZPq5+jchNwYvkr80z3oqtgZNlAiEA8ZBz1zF2rNC7kAmaQw9u+OzMiX/fSugNEb2fh2kIzhowDQYJKoZIhvcNAQELBQADggEBAGJOYB7/GjMDwX3HTuwIdAC47TSX0/Xe404bx6RPuhRRR705pDVBT/6ngd+PJwzPlwurPNbitkH4G1oSnRN34XMUPHKYOucs35iOLehTic84YQ/4LC/hr3D1vpJ7T3Wzpd5cJqlDhgXxV/S0rOObLK64RPQ4T2+NJdHUi/lvah3nejfjX1/xNNS5kUVhmpYxrhup3rrmu6FwJUL62N3hTX1s/asksi9xNvrWRJoUF74fQqXsMAuqSq91UZALR2PuJF3SPtUIEbogzw2clcahuQ73Puk1yy4WBdH9jn6zvXMYhzqMyRK5ZyKD436KanOwttikHD8IEtBip/inodtAZanALwADAAAAAAEBAAAAAAAABFAyNTYAAAAQUlNBLVBLQ1MxLVNIQTI1NgADZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAH+jCCB/YwggbeoAMCAQICEgNwRy3vDA0FvQsCe6WyTQ8zxjANBgkqhkiG9w0BAQsFADBKMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDEjMCEGA1UEAxMaTGV0J3MgRW5jcnlwdCBBdXRob3JpdHkgWDMwHhcNMjAwMjExMDAyMjEwWhcNMjAwNTExMDAyMjEwWjAqMSgwJgYDVQQDEx9qYXZhc2NyaXB0LmRldmVsb3ByZWZlcmVuY2UuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuImayR3uSVIlqfgof1kBOQqgZQD3HF7yqIkak95aa++wIs1OiLdTgB7DCUal0fBLj++UgrqRbGdZxHrK8Z7CbOmPDuqYQg+3oyQEB0tca6AOlAflIZuKpukC/ySEJdpnCJZVU8VcfZNlG7GVePS+3EvMv4MpHKIjQDBnxQjVphXfaXpBoPHkiMJ6NWmtllYHWbDfPTnWc1jjiuj1NK0OpzWpN+YtRCKcpaxniXVGx9QYW7fbJiDgJiJ6swlnJ39ejdlPdnjfXpVppRZO+Eqy8kkiOnmeuPwPPCtXXT57ml44g5bvMOwwcwF+zLiQj9OaNdkey5mWxgnQdnFSCIBiowIDAQABo4IE9DCCBPAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRace9njaPBv8YBqxTtXkjsRYtwbTAfBgNVHSMEGDAWgBSoSmpjBH3duubRObemRWXv86jsoTBvBggrBgEFBQcBAQRjMGEwLgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLmludC14My5sZXRzZW5jcnlwdC5vcmcwLwYIKwYBBQUHMAKGI2h0dHA6Ly9jZXJ0LmludC14My5sZXRzZW5jcnlwdC5vcmcvMIICpwYDVR0RBIICnjCCApqCGGFuZHJvaWQuZGV2ZWxvcC1idWdzLmNvbYIcYW5kcm9pZC5kZXZlbG9wcmVmZXJlbmNlLmNvbYIXY3NoYXJwLmRldmVsb3AtYnVncy5jb22CG2NzaGFycC5kZXZlbG9wcmVmZXJlbmNlLmNvbYITZGF0YWJhc2VkZXZlbG9wLmNvbYIQZGV2ZWxvcC1idWdzLmNvbYIUZGV2ZWxvcHJlZmVyZW5jZS5jb22CGWh0bWwuZGV2ZWxvcHJlZmVyZW5jZS5jb22CFGlvcy5kZXZlbG9wLWJ1Z3MuY29tghhpb3MuZGV2ZWxvcHJlZmVyZW5jZS5jb22CGGphdmEuZGF0YWJhc2VkZXZlbG9wLmNvbYIVamF2YS5kZXZlbG9wLWJ1Z3MuY29tghlqYXZhLmRldmVsb3ByZWZlcmVuY2UuY29tghtqYXZhc2NyaXB0LmRldmVsb3AtYnVncy5jb22CH2phdmFzY3JpcHQuZGV2ZWxvcHJlZmVyZW5jZS5jb22CF2pxdWVyeS5kZXZlbG9wLWJ1Z3MuY29tghtqcXVlcnkuZGV2ZWxvcHJlZmVyZW5jZS5jb22CFHBocC5kZXZlbG9wLWJ1Z3MuY29tghhwaHAuZGV2ZWxvcHJlZmVyZW5jZS5jb22CF3B5dGhvbi5kZXZlbG9wLWJ1Z3MuY29tghtweXRob24uZGV2ZWxvcHJlZmVyZW5jZS5jb22CFXJ1YnkuZGV2ZWxvcC1idWdzLmNvbYIcc29mdHdhcmUuZGF0YWJhc2VkZXZlbG9wLmNvbYIXd3d3LmRhdGFiYXNl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 request-method GET response-head HTTP/1.1 200 OK
+Server: nginx/1.12.2
+Date: Sun, 05 Apr 2020 09:08:18 GMT
+Content-Type: text/html;charset=utf-8
+Content-Language: en-US
+ original-response-headers Server: nginx/1.12.2
+Date: Sun, 05 Apr 2020 09:08:18 GMT
+Content-Type: text/html;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: JSESSIONID=2D4B6E2304DEB8144873E8C3F85FD1AC; Path=/; HttpOnly
+Content-Language: en-US
+ ctid 1 uncompressed-len 0 predictor::resource-count 11 predictor::https://jquery.develop-bugs.com/css/websim.css 1,1,1586077698,4097 predictor::https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js 1,1,1586077698,4096 net-response-time-onstart 3946 net-response-time-onstop 4664 predictor::https://jquery.develop-bugs.com/css/a5.gif 1,1,1586077698,4096 predictor::https://jquery.develop-bugs.com/css/a7.gif 1,1,1586077698,4096 predictor::https://jquery.develop-bugs.com/css/a1.gif 1,1,1586077698,4096 predictor::https://jquery.develop-bugs.com/css/a2.gif 1,1,1586077698,4096 predictor::https://adservice.google.pl/adsid/integrator.js?domain=jquery.develop-bugs.com 1,1,1586077698,4096 predictor::https://adservice.google.com/adsid/integrator.js?domain=jquery.develop-bugs.com 1,1,1586077698,4096 predictor::https://pagead2.googlesyndication.com/pagead/js/r20200401/r20190131/show_ads_impl_fy2019.js 1,1,1586077698,4096 predictor::https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101 1,1,1586077698,4096 predictor::https://tpc.googlesyndication.com/sodar/sodar2.js 1,1,1586077698,4096   zÆ

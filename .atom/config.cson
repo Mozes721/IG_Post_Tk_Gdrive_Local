@@ -1,0 +1,7 @@
+"*":
+  core:
+    useTreeSitterParsers: false
+  "exception-reporting":
+    userId: "150a91ae-aa7e-43fd-86b7-62311d01f54a"
+  kite:
+    showWelcomeNotificationOnStartup: false
