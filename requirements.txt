@@ -1,0 +1,7 @@
+googleapiclient.http
+googleapiclient
+httplib2
+oauth2client
+tkinter
+instabot
+PIL
