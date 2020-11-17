@@ -1,0 +1,27 @@
+2020-11-14 21:47:59,651 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-11-14 21:47:59,651 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /home/mozes721/anaconda3/lib/python3.7/site-packages/instabot/bot/bot.py
+2020-11-14 21:48:18,146 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-11-14 21:48:18,146 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-11-14 21:48:18,146 - instabot version: 0.117.0 (api_login) - INFO - Recovery from /home/mozes721/Desktop/IG_Automation/config/unlimited_testing_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=5406f6b0-4ecc-4b83-836c-61833ddc1875
+- uuid=f2c5a4f2-0065-41cd-9ffe-38385a152972
+- client_session_id=efae491c-85d1-412b-82b0-a26e24627fcf
+- device_id=android-538ca789b87978fb
+2020-11-14 21:48:18,146 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-11-14 21:48:19,771 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-11-14 21:48:20,747 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-11-14 21:48:21,362 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-11-14 21:48:22,181 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2020-11-14 21:48:22,754 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [200]>
+2020-11-14 21:48:23,204 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2020-11-14 21:48:24,024 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [200]>
+2020-11-14 21:48:24,443 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [200]>
+2020-11-14 21:48:25,050 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
+2020-11-14 21:48:25,053 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'unlimited_testing'!
+2020-11-14 21:48:25,053 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /home/mozes721/Desktop/IG_Automation/config/unlimited_testing.checkpoint
+2020-11-14 21:48:46,681 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2020-11-14 21:48:47,987 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2020-11-14 21:48:47,988 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '/home/mozes721/Pictures/cars/lambo.jpeg' is uploaded.
+2020-11-14 21:48:47,988 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /home/mozes721/Desktop/IG_Automation/config/unlimited_testing.checkpoint
+2020-11-14 21:48:47,989 - instabot version: 0.117.0 (bot) - INFO - Total requests: 43

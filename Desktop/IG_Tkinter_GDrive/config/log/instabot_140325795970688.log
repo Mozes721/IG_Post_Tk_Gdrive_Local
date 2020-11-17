@@ -1,0 +1,17 @@
+2020-09-02 10:35:32,201 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2020-09-02 10:35:32,201 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /home/mozes721/anaconda3/lib/python3.7/site-packages/instabot/bot/bot.py
+2020-09-02 10:35:52,483 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2020-09-02 10:35:52,518 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2020-09-02 10:35:52,518 - instabot version: 0.117.0 (api_login) - INFO - Recovery from /home/mozes721/Desktop/AI_bots/IG/config/unlimited_testing_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=5406f6b0-4ecc-4b83-836c-61833ddc1875
+- uuid=f2c5a4f2-0065-41cd-9ffe-38385a152972
+- client_session_id=55a7c25f-f28c-4ef0-99e3-caf4fb0f803f
+- device_id=android-538ca789b87978fb
+2020-09-02 10:35:52,519 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2020-09-02 10:35:54,062 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2020-09-02 10:35:54,644 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2020-09-02 10:35:54,647 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'unlimited_testing'!
+2020-09-02 10:35:54,647 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /home/mozes721/Desktop/AI_bots/IG/config/unlimited_testing.checkpoint
+2020-09-02 10:35:57,855 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /home/mozes721/Desktop/AI_bots/IG/config/unlimited_testing.checkpoint
+2020-09-02 10:35:57,856 - instabot version: 0.117.0 (bot) - INFO - Total requests: 37
