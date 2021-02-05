@@ -12,5 +12,7 @@ RememberPassword=true
 User=richard.taujenis@gmail.com
 CredentialName=
 
+IsExternal=false
+
 [Address Book]
 BackendName=google

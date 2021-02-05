@@ -1,466 +1,641 @@
-sudo install --clasic cod
-sudo admin
-sudo mkdir
-sudo mkdir Generic
-sudo su
-python
-ls
-cd Generic
-ls
-python Tic_tac_toe.py
-cd Generic
-python Tic_tac_toe.py
-python tic_tac_toe.py
-1
-python tic_tac_toe.py
-exit() python3
-python
-python3
-code .
-sudo apt install snapd
-sudo snap install p3x-onenote
-ls
-cd Generic
-python3 tic_tac_toe.py
-sudo pm-suspend
-pm-suspend
-sudo apt install molly-guard
-suspend
-pm-hibernate
-hibernate
-sudo apt install hibernate
-sudo pm-hybernate
-sudo hybernate
-suspend
-pm-suspend-hybrid 
-systemctl
-code .
+sudo sysctl kernel.yama.ptrace_scope=0
+sudo add-apt-repository ppa:wine/wine-builds
 sudo apt-get update
-sudo apt-get install build-essential libssl-dev libffi-dev libgmp3-dev
-virtualenv python-pip libpq-dev python-dev
-sudo apt-get install build-essential libssl-dev libffi-dev libgmp3-dev
-virtualenv python-pip libpq-dev python-dev
-mkdir mkdir pgAdmin4
-cd pgAdmin3
-cd pgAdmin4
-virtualenv pgAdmin4
-sudo virtualenv pgAdmin4
+deb [arch=amd64] http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main
+sudo grep -i postgresql /etc/apt/sources.list
+cd /etc/apt/sources.list.d
+grep chrome * | grep -v amd64
+grep -r google  /etc/apt | grep -v amd64 
+cat /etc/apt/sources.list.d/google-chrome-unstable.list
+deb http://dl.google.com/linux/chrome/deb/ stable main
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+sudo [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+dpkg --print-foreign-architectures
+dpkg --print-architecture 
+sudo dpkg --remove-architecture i386
+dpkg --get-selections | awk '/i386/{print $1}'
+apt-get remove --purge `dpkg --get-selections | awk '/i386/{print $1}'`
+dpkg --remove-architecture i386
+sudo apt install wine-staging
+WINEARCH=win32 vblank_mode=0 Downloads/Battle.net-Setup.exe
+winecfg
+wine Battle.net-Setup.exe
+virtualenv -p python3 env
+source env/bin/activate
+ps -fA | grep python
+kill -32616 pid
+kill 32616 pid
+kill 32616
+sudo kill -9 41407
+kill -9 pid
+
+ps -fA | grep python
+ps aux | grep python
+sudo kill -9 1157
+/bin/python3.7 /home/mozes721/Desktop/Project/Flask_Django/Flask/Login_System/app.py
+./run
 ls
-cd ..
+cd Flask_Django
 ls
-cd pgAdmin3
-cd pgAdmin4
-virtualenv pgAdmin3
-sudo apt install virtualenv
+cd Flask
 ls
-cd ..
+cd Login_system
+cd Login_System
 ls
-cd pgAdmin4
-virtualenv pgAdmin4
-source bin/activate
+./run
 ls
-cd pgAdmin4
-source bin/activate
-wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-
-2.1-py2.py3-none-any.whl
-wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-
-2.1-py2.py3-none-any.whl
+source env/bin/activate
+./run
+python -m pip install 'mongo[srv]' dnspython
+./run
+pip install Flask-PyMongo
+./run
+docker -v
 ls
-pip install pgadmin4-2.1-py2.py3-none-any.whl
-sudo apt-GET install postgresql postgresql-contrib
-sudo apt-get install postgresql postgresql-contrib
-$ python lib/python3.7/site-packages/pgadmin4/pgAdmin4.py
-$ python lib/python3/site-packages/pgadmin4/pgAdmin4.py
-python lib/python3/site-packages/pgadmin4/pgAdmin4.py
-sudo apt -y install postgresql postgresql-contrib
-su - postgres
+cd Flask_Django
 ls
-cd
-cd ..
+cd Flask
 ls
-mkdir pgAdmin4
-mkdir PgAdmin4
-mkdir postgres
+cd Login_system
+cd Login_System
+virtualenv -p env
+virtualenv -p python3 env
 ls
-cd ..
+source env/bin/activate
+pip install flask pymongo passlib
+sudo chmod +x run
+./run
+sudo chmod +x run
+ps -fA | grep python
+kill -9 pid
+kill -9 pid 1147
+kill -9 pid 2623
+sudo kill -9 10869
+sudo kill -9 pid 1147
+sudo kill -9  1147
+ps -fA | grep python
+sudo kill -9 2436
+/bin/python3.7 /home/mozes721/Desktop/Project/Flask_Django/Flask/Login_System/user/models.py
 ls
-mkdir PgAdmin4
-sudo apt update
-apt list --upgradable
+cd Flask_Django
 ls
-cd ..
+cd Flask
 ls
-cd
-cd mozes721
+cd Login_System
 ls
-mkdir PgAdmin4
+source bin/env/activate
+source env/bin/activate
+./run
 ls
-mkdir PgAdmin4
+cd Flask_Django
 ls
-cd PgAdmin4
+cd Flask
 ls
-sudo apt -y install postgresql postgresql-contrib
-su -postgres
-su - postgres
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt install pgadmin4 pgadmin4-apache2 -y
-cd /
-cd /etc/apt/sources.list.d/
-clear
+cd Login_system
+cd Login_System
 ls
-sudo touch pgdg.list
+./run
+pip install passlib
+./run
+python -c 'import os; print(os.urandom(16))'
 ls
-sudo getit pgdg.list
-sudo gedit pgdg.list
-clear
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-cd
-sudo apt-get install postgresql-11
-sudo postgresql-client-11 postgresql-11 postgresql-contrib-9.x libpq-dev postgresql-server-dev-11 pgadmin4
-sudo postgresql-client-11
-postgresql-client-11
-sudo pgadmin4
-sudo apt-get install  postgresql-client-11 postgresql-11 postgresql-contrib-9.x libpq-dev postgresql-server-dev-11 pgadmin4
-sudo apt-get install  postgresql-client-11 postgresql-11\ libpq-dev postgresql-server-dev-11 pgadmin4
-sudo apt-get install  postgresql-client-11 postgresql-11\ libpq-dev  pgadmin4
-sudo apt-get install  libpq-dev  pgadmin4
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-sudo apt-get install gnupg
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl saemon-reload
-sudo ststemctl status mongod
-sudo systemctl status mongod
-sudo systemctl enable mongod
+source env/bin/activate
+ls
+.run
+./run
+pip insall djongo
+pip install djongo
+ls
+cd Flask_django
+cd Flask_Django
+ls
+cd Flask
+ls
+cd Login_System
+ls
+./run
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>" --username <username>
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>"
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>" --username mozes01
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/Richard" --username Richard
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/video" --username Richard
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>" --username Mozes721
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/video" --username Mozes721
 mongo
-mongo --host mongodb0.example.com:28015
-wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
-cd /etc/apt/sources.list.d/mongodb-org-4.2.list
-cd /etc/apt/sources
-etc/apt/sources
-sudo apt-get install mongodb
-sudo apt-get update
-mongo
-sudo apt install update
-mongo
-sudo apt-get install mongodb-org
-mongo
-sudo apt-get install -y mongodb-org=4.0.5 mongodb-org-server=4.0.5 mongodb-org-shell=4.0.5 mongodb-org-mongos=4.0.5 mongodb-org-tools=4.0.5
-sudo apt update
-sudo apt-get install mongodb
-sudo apt-get install mongodb-org
-apt --fix-broken install
-sudo apt --fix-broken install
-mongo
-sudo apt-get install mongodb
-sudo apt --fix-broken install 
-sudo apt-get update
-sudo service mongodb start
-sudo systemctl unmask mongodb
-sudo service mongodb start
-sudo systemctl start mongod
-sudo systemctl enable mongod
-sudo service mongod restart
-sudo service mongod start
-sudo systemctl enable mongod.service
-sudo service mongod stop
-sudo apt-get purge mongodb-org*
-sudo rm -r /var/log/mongodb
-sudo rm -r /var/lib/mongodb
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-sudo service mongod start
-mongod --repair
-sudo systemctl enable mongod
-sudo service nongod restart
-sudo mongod
-mongo --repair
-mongo --help
-sudo systemctl enable mongod
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-sudo service mongod start
-sudo systemctl unmask mongodb
-sudo service mongod start
-sudo mongod --dbpath=/var/lib/mongodb
-sudo apt-get install mongodb-org
-sudo apt-get -f install 
-sudo apt-get clean
-sudo apt-get install -f
-sudo dpkg --configure -a
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-mongo
+sudo apt-get --only-upgrade install mongodb-org mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
+dpkg -l | grep mongo
+sudo apt-get install mongodb-org mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>" --username Mozes721
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/test" --username m001-student
 mongod
-mongo
-mongod
-mongo
-sudo rm /var/lib/mongodb/mongod.lock
-mongod repair
-mongo repair
-mongo
-vim /etc/mongodb.conf
-/etc/mongodb.conf
-sudo service mongodb start
-systemctl statsu mongodb.service
-sudo systemctl statsu mongodb.service
-su- systemctl statsu mongodb.service
-journalctl -xe
-cd ..
-ls
-sudo apt-get python3-venv
-python3-venv
-sudo python3-venv
-sudo apt-get venv
-sudo apt-get -m venv
-sudo apt-get install python3-pip
-The following packages have unmet dependencies:
-sudo apt-get purge mongodb-org
-sudo apt-get install mongodb
-sudo apt-get update
+mongod --shutdown
 mongo --version
-sudo apt list --installed | grep mongo
-mongod
-mongo
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/<dbname>" --username Mozes721
+Error while trying to show server startup warnings: user is not allowed to do action [getLog] on [admin.]
+mongo "mongodb+srv://cluster0.p7ffp.mongodb.net/test" --username Mozes721
+python manage.py register
+virtualenv venv
+sudo venv/bin/activate
 ls
-mkdir MongoDB
-cdl MongoDB
-cd MongoDB
-python3 -m venv env
-ls
-cd MongoDB
-mongod
-mongo
-python
-python3
-sudo apt-get py 3.7 pip install numpy
-sudo apt-get python 3.7 pip install numpy
-sudo apt-get pip install numpy
-sudo apt-get install numpy
-apt-get install git
-sudo apt-get install git
-add-apt-repository ppa:git-core/ppa # apt update; apt install git
-apt-get install git
-ps aux | grep -i apt
-sudo kill grep --color
-sudo kill grep --color=auto -i
-sudo killall apt apt-get
-sudo killall apt
-sudo killall
-git
-git pull https://github.com/Mozes721/PythonCrashCourse.git
-/Users/richard/anaconda3/bin/python /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-/usr/bin/python3.7 /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-pip install pygame
-pip3 install pygame
-sudo apt install python3-pip
-/usr/bin/python3.7 /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-/usr/bin/python3.7
-atom
-atom .
-code
-pip install pygame
-sudo apt install python-pip
-sudo apt-get install pip pygame
-apt install python3-pygame
-pip install pygame
-sudo apt-get install python-pygame
-mkdir PythonCrashCourse
-git
-sudo fetch https://github.com/Mozes721/PythonCrashCourse.git
-sudo git fetch https://github.com/Mozes721/PythonCrashCourse.git
-git add .
-ls
-cd PythonCrashCourse
-git
-git pull orgin master https://github.com/Mozes721/PythonCrashCourse.git
-git pull  https://github.com/Mozes721/PythonCrashCourse.git
-/bin/python3.7 -m pip install -U pytest --user
-/bin/python3.7 /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-sudo pip install pygame
-pip install pygame
-code
-/bin/python3.7 /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-sudo apt-get install python-pygame
-/bin/python3.7 /home/mozes721/Documents/GitHub/PythonCrashCourse/chapter12/Catch/catch_game.py
-/bin/python3.7
-sudo tar xfz pycharm-*.tar.gz -C /opt/
-sudo snap install pycharm-community --classic
-sudo pip install shelve
-python3
-atom
-note
-node
-atom
-ls
-cd Desktop
-ls
-cd Projects
-cd Project
-ls
-cd Projects
-ls
-cd Flask_Django
-ls
-cd Django
-ls
-cd mysite
-ls
-source bin/activate
-ls
-python3 manage.py runserver
-python manage.py runserver
-ls
-python manage.py runserver
-python3 manage.py shell
-ls
-cd ..
-ls
-cd ..
-ls
-cd Flask_Django
-cd Desktop
-ls
-cd Project
-cd Projects
-ls
-cd Flask_django
-cd Flask_Django
-ls
-cd Django
-ls
-sudo apt-get install django
-pip3 install Django
-django-admin --version
-ls
-cd mysite
-ls
-python manage.py migrate
-python manage.py runserver
-python3 manage.py runserver
-sudo apt-get update
-sudo apt-get install tinymce
-python3 manage.py runserver
-sudo apt-get update -y
-ls
-sudo apt-get install tinymce
-sudo apt-get update
-sudo apt-install django
-pip3 install django
-cd desktop
-ls
-cd Dekstop
-d Desktop
-ls
-cd Desktop
-ls
-cd Projects
-cd Project
-ls
-cd Projects
-ls
-cd Flask_django
-cd Flask_Django
-ls
-cd Django
-ls
-python3 manage.py runserver
-cd mysite
-ls
-python3 manage.py runserver
-ls
-sudo apt-get install -y tinymce
-sudo apt autoremove
-sudo apt-get install -y tinymce
-ls
-python3 manage.py migrateserver
-python3 manage.py migrate
-sudo apt-get update -y
-python3 manage.py makemigrations
-sudo apt-get install -y TinyMCE
-cd
-ls
-cd Desktop
-ls
-cd PythonCrashCourse
-ls
-cd chapter_18
-ls
-source ll_env/bin/activate
-ls
-python3 manage.py runserver
-python3 manage.py migrate
-python3 manage.py runserver
-pipenv shell django==2.1
-python3 manage.py runserver
-python3 manage.py migrate
-python manage.py migrate
-python manage.py runserver
-ls
-atom
-ls
-cd Desktop
-cd Project
-cd Projects
-ls
-cd Flask_django
-cd Flask_Django
-ls
-cd Django
-virtualenv env
-. env/bin/activate
+sudo venv/bin/activate
+source venv/bin/activate
 pip install django
-pip install tinymce
-pip3 install timymce
-sudo apt-get update -y
-sudo apt-get install -y tinymce
 ls
-cd mysite
+cd Flask_Django
 ls
-python3 manage.py runserver
-ls settings.py
+cd Flaks
+cd Flask
+sourve env/bin/activate
 ls
-cd mysite
-python
+cd Login_System
 ls
+source env/bin/activate
+ls
+./run
+ls
+cd objects
+ls
+node task1.js
+ls
+cd Flask_Django
+ls
+cd Flask
+ls
+cd Login_System
+ls
+source env/bin/activate
+ls
+python3 app.py
+ls
+python3 app.py
+ls
+cd objects
+ls
+node sort.js
+ls
+cd objects
+node sort.js
+kill -9 pid
+kill -9 59582
+kill -9 59588
+git
+echo "# Front_end" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:Mozes721/Front_end.git
+git push -u origin master
+git add .
+git commit -m "mm"
+git push -u origin master
+git init
+git add .
+git commit -m "ssdasd"
+git push
+git remote add origin git@github.com:Mozes721/Front_end.git
+git push -u origin master
+git@github.com:Mozes721/Front_end.git
+git
+git init
+git add .
+git commit -m "mmo"
+git push -u origin master
+sudo apt install libssl1.1 ocl-icd-opencl-dev fakeroot xorriso
+pip install instapy-cli
+ls
+cd IG_bot
+ls
+source botenv/bin/activate
+ls
+python app.py
+python app.py
+python app.py
+ls
+cd IG_bot
+virtualenv botenv
+ls
+source botenv/bin/activate
+ls
+pip install instapy-cli
+python app.py
+pip3 install instapy
+pip install instapy
+pip install instapy-cli
+la
+ls
+cd IG_bot
+pip install instapy-cli
+pip2 install instapy-cli
+pip install --upgrade pip user
+pip install --upgrade pip
+pip3 install instapy_cli
+python -m pip install instapy_cli
+sudo apt install python3-widgetsnbextension
+sudo apt install python3-testresources
+sudo apt-get update
+pip3 install instabot
+pip install instabot
+pip install pip==9.0.1 
+pip install instabot
+ls
+node.js app.js
+app.js
+ls
+npm app.js
+node app.js
+sudo apt install -y apt-transport-https
+egrep -r '^[ ^I]*[^#].*universe' /etc/apt/sources.list*
+sudo add-apt-repository universe
+cd /tmp
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/
+sudo apt-get install ./packages-microsoft-prod.deb
+packages-microsoft-prod.deb
+sudo apt update
+sudo apt install dotnet-sdk-2.2
+dotnet --version
+sudo snap install dotnet-sdk
+sudo install dotnet-sdk
+dotnet new console -o helloWorld
+ls
+node array.js
+ls
+nodejs array.js
+nodejs array.js
 python3
-export DJANG0_SETINGS_MODULE=settings
-ls settings.py
-export DJANGO_SETTINGS_MODULE=settings
-echo SDJANGO_SETTINGS_MODULE
+ls
+cd Data types
+ls
+cd datatypes
+ls
+
+ls
+node weakMap.js
+pip install pydrive
+pip install google_auth_outhlib
+sudo gem install sass
+sudo apt-get install ruby-full
+sudo yum install ruby
+sudo snap install ruby --classic
+cd Desktop
+mkdir SASS
+ls
+cd SASS
+touch index.html
+youch styles.sass
+touch styles.sass
+sass --watch styles.sass
+sass --watch styles.sass:styles.css
+ls
+sass --watch styles.sass:styles.css
+--trace
+sass --trace
+cd ..
+sudo apt install ruby-sass
+sudo apt-get install ruby-listen
+gem install rb-inotify
+gem install rb-inotify --user
+ls
+cd Desktop/SASS
+sass --watch styles.sass:styles.css
+ls
+sass --watch styles.sass:styles.css
+scss --version
+gem list listen
+sass --trace --watch styles.sass:styles.css
+cd ..
+sudo gem install rb-fsevent
+sudo apt-get install ruby-listen
+sudo gem uninstall listen --version 2.7.0
+sudo gem install listen --version 2.4.1
+ls
+cd Desktop/SASS
+ls
+sudo apt-get install ruby-listen
+sudo apt autoremove --user
+sudo apt autoremove
+ls
+sass --watch styles.sass:styles.css
+sass --backtrace --watch styles.sass:styles.css
+sass --trace --watch styles.sass:styles.css
+ls
+sass --watch --trace styles.sass:styles.css
+sass --listen styles.sass:styles.css
+sass --trace styles.sass:styles.css
+scss --style expanded "/home/mozes721/Desktop/SASS/2_first-website/main.scss"
 python3
 ls
+node object.js
+ls
+cd datatypes
+ls
+node object.js
+ls
+node dates.js
+pip install PyDrive
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/ http://your_domain/your_file.zip
+pip install google-colab
+cd "/home/mozes721/Desktop/JS_Projects/Reviews"
+pip install PyDrive
+pip install PyDrive --use-feature=2020-resolver
+pip install google-auth
+pip list --outdated
+curl https://sdk.cloud.google.com | bash
+ls
+ls datatypes
+node dates.js
+nodejs dates.js
+ls
+cd datatypes
+ls
+node dates.js
+cd "/home/mozes721/Desktop/JS_Projects/Famous_qoutes"
+ls
+cd datatypes
+ls
+nodejs dates.js
+ls
+cd datatypes
+ls
+nodejs dates
+cd "/home/mozes721/Desktop/JS_Projects/Background_change"
+ls
+cd datatypes
+ls
+nodejs dates.js
+ls
+cd Desktop
+ls
+mkdir Magebit
+cd Magebit
+cat index.html styles.css script.js
+touch index.html styles.css script.js
+sudo apt-get install snapd
+sudo snap install brackets
+sudo add-apt-repository ppa:webupd8team/brackets
+sudo apt-get update
+sudo apt-get install brackets
+snap install brackets
+snap install brackets --classic
+npm install -g create-react-app
+sudo chown -R $USER /usr/local/lib/node_modules
+npm install -g create-react-app
+npm install -g apiconnect
+cnpm install swagger-client 
+sudo cnpm install swagger-client 
+sudo install swagger-client 
+sudo npm i -g create-react-app
+npm start
+npm install -g create-react-app
+sudo npm install -g eslint
+npm install -g create-react-app
+npm config set unsafe-perm=true
+npm install -g create-react-app
+node /home/mozes721/Desktop/Web_dev/Slider/app.js
+ls
+React app.js
+nodejs app.js
+npx create-react-app slideshow
+npm start
+sudo npm install -g npm
+sudo npm cache clean --force
+npm start
+ls
+cd slideshow
+npm start
+ls
+cd Desktop
+ls
+cd Slider
+ls
+toch README.md
+touch README.md
+ls
+cd working_functions
+ls
+nodejs nested_func.js
+ls
+cd working_functions
+ls
+nodejs nested_func.js
+ls
+cd working_functions
+ls
+nodejs nested_func.js
+ls
+cd working_funtions
+ls
+cd working_functions
+ls
+nodejs nested_func.js
+pip install matplotlib
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+pip install pyxlsb
+pip install --upgrade pip
+pip install pyxlsb
+pip install pandas xlrd
+pip install pandas xlrd sqlalchemy
+sudo apt install python3-mysqldb
+sudo apt install python3-mysql
+pip install xlrd
+ls
+cd US_Elections
+source env/bin/activate
+ls
+cd desktop
+cd Desktop
+ls
+cd US_Elections
+ls
+source venv/bin/activate
+code .
+ls
+clear
+ls
+cd Desktop
+ls
+cd US_Elections
+ls
+sudo apt-get install python3-pip
+sudo apt autoremove
+virtualenv venv
+source venv/bin/activate
+pip3 install urllib2
+pip3 install bs4
+ls
+python3 scrape_to_csv.py
+pip3 install urllib2
+python3 scrape_to_csv.py
+pip3 install urlib3
+pip3 install urllib3
+python3 scrape_to_csv.py
+pip3 install splinter.browser
+pip3 install splinter
+python3 scrape_to_csv.py
+pip3 install selenium
+python3 scrape_to_csv.py
+pip3 install webdriver-manager
+python3 scrape_to_csv.py
 cd ..
-ls
-python3 manage.py runserver
-ls
-cd ..
-ls
-python3 manage.py runserver
-cd mysite
-ls
-cd mysite
-ls
-python3 manage.py runserver
-cd ..
-ls
-python3 manage.py runserver
-ls
-cd mysite
+cd /etc/apt/sources.list.d
+grep chrome * | grep -v amd64
+grep -r google  /etc/apt | grep -v amd64 
+cat /etc/apt/sources.list.d/google-chrome-unstable.list
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+dpkg --print-architecture 
+sudo dpkg --remove-architecture i386
+sudo grep -i postgresql /etc/apt/sources.list.d/*.list
+dpkg --print-foreign-architectures
+dpkg --print-architecture 
+sudo dpkg --remove-architecture i386
+dpkg --get-selections | awk '/i386/{print $1}'
+apt-get remove --purge `dpkg --get-selections | awk '/i386/{print $1}'`
+root
+su -
+Asebomu12#
+su -
+password root
+sudo apt install 
 python3
-export DJANGO_SETTINGS_MODULE=settings
+sudo apt update
 ls
+cd Desktop
+ls
+cd AI_bots
+ls
+cd IG
+ls
+python3 TKGUI.py
+ls
+python3 TKGUI.py
+python TKGUI.py
+ls
+python3 quickstart.py
+python3 app.py
+pip3 install instabot
+python3 app.py
+export DISPLAY=:0.0
+pip3 install matplotlib
+pip3 install matplotlib.pyplot
+pip install matplotlib
+python3 -mpip install matplotlib
+python3 -mpip3 install matplotlib
+python -mpip install matplotlib
+ls
+python3 app.py
+ls
+python3 app.py
 cd ..
-export DJANGO_SETTINGS_MODULE=settings
 ls
-python3 manage.py runserver
+xhost si:localuser:root
+sudo   your-graphical-app
+xhost +
+tkinter.TclError: no display name and no $DISPLAY environment variable
+ls
+cd Desktop/IG_Automation
+python3 app.py
+ls
+cd Desktop/IG_Automation
+ls
+python3 quickstart.py
+pip3 install google-api-client
+python3 quickstart.py
+pip3 install googleapiclient
+pip3 install googleapiclient.discovery
+pip3 install google
+pip3 install google.auth
+pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+python3 quickstart.py
+pip3 install pydrive
+ls
+python authenticate.py
+python3 authenticate.py
+ls
+pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+sudo pip3 install --upgrade google-api-python-client
+python3 quickstart.py
+python quickstart.py
+ls
+python3 quickstart.py
+pip show six | grep "Location:" | cut -d " " -f2
+pip3 install --upgrade httplib2
+python3 quickstart.py
+pip3 install gspread ouath2client
+pip install gspread ouath2client
+pip3 install gspread oauth2client
+pip3 install google-cloud
+pip3 install google-cloud-vision
+pip3 install --upgrade google-api-python-client
+pip install google-api-python-client
+python3 -c "import googleapiclient, httplib2, oauth2client"
+ls
+python3 drive_list.py
+ls
+cd Desktop
+ls
+cd IG_Automation
+ls
+python3 drive_list.py
+s
+ls
+python3 drive_list.py
+ls
+python3 app.py
+ls
+cd Desktop
+ls
+cd IG_Automation
+ls
+python3 app.py
+python3 drive_list.py
+python3 app.py
+cd/Desktop/IG_Tkinter_GDrive
+cd Desktop
+ls
+cd IG_Tkinter_GDrive
+cd ..
+git clone https://github.com/Mozes721/IG_Tk_Gdrive.git
+cd Desktop
+cd IG_Tkinter_GDrive
+git status
+git add .
+git commit -m "files added"
+git push origin master
+git push -u origin master
+git remote remove myOrigin
+git remote remove origin
+git remote add origin git@github.com:Mozes721/IG_Tk_Gdrive.git
+git push origin master
+rd .git /S/Q
+git init
+git add .
+git commit -m "added files"
+git remote add origin https://github.com/Mozes721/IG_Tk_Gdrive.git
+git pushh -u origin master
+git push -u origin master
+git remote -v
+ls -l
+git remote -v
+git remote fetch
+git remote set-url origin git@github.com:Mozes721/IG_Tk_Gdrive.git
+git remote -v
+ls -l
+git remote set-url origin master https://github.com/Mozes721/IG_Tk_Gdrive.git
+git remote set-url origin https://github.com/Mozes721/IG_Tk_Gdrive.git
+ls -v
+git remote -v
+git origin master fetch https://github.com/Mozes721/IG_Tk_Gdrive.git
+git master fetch https://github.com/Mozes721/IG_Tk_Gdrive.git
+git fetch  https://github.com/Mozes721/IG_Tk_Gdrive.git
+ls -l
+git init
+git config --global user.name "Mozes721"
+git init
+git https://github.com/Mozes721/IG_Tk_Gdrive.git
+git get https://github.com/Mozes721/IG_Tk_Gdrive.git
+git clone https://github.com/Mozes721/IG_Tk_Gdrive.git
+ls
+ls IG_Tk_Gdrive
+git clone master https://github.com/Mozes721/IG_Tk_Gdrive.git
