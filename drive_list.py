@@ -20,6 +20,19 @@ DRIVE = discovery.build('drive', 'v3', http=creds.authorize(Http()))
 
 page_token = None
 
+
+#loop through the files prompt the user for input when matched assign id and name
+def get_file():
+    files = img_files()
+    choose_img = input('What photo do you choose out of these given: ')
+    image_input.append(choose_img)
+    for file in files:
+        if choose_img == file['name']:
+            id = file['id']
+            name = file['name']
+            #run the download_file function with the id and name of the found file
+            download_file(id, name)
+
 #loop through the image files in Gdrive
 def img_files():
     files = DRIVE.files().list(q="mimeType='image/jpeg'",
@@ -45,17 +58,7 @@ def download_file(id, filename):
         time.sleep(2)
         
     
-#loop through the files prompt the user for input when matched assign id and name
-def get_file():
-    files = img_files()
-    choose_img = input('What photo do you choose out of these given: ')
-    image_input.append(choose_img)
-    for file in files:
-        if choose_img == file['name']:
-            id = file['id']
-            name = file['name']
-            #run the download_file function with the id and name of the found file
-            download_file(id, name)
+
        
    
     
