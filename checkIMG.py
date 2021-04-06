@@ -8,16 +8,16 @@ from drive_list import get_file
 image = []
 
 def choose_option(): 
-        choose = input('Do you want to select your PC data(1) or Gdrive(2) if you wish to quit press q: ')
-        if choose == '1':
-            check_folder()
-        elif choose == '2':
-            get_file()
-        elif choose.lower() == 'q':
-            sys.exit()
-        else:
-            print('Please choose between (1) or (2) or q')
-            choose_option()
+    choose = input('Do you want to select your PC data(1) or Gdrive(2) if you wish to quit press q: ')
+    if choose == '1':
+        check_folder()
+    elif choose == '2':
+        get_file()
+    elif choose.lower() == 'q':
+        sys.exit()
+    else:
+        print('Please choose between (1) or (2) or q')
+        choose_option()
 
 #prompt a user to choose where to choose the image in the picture section
 def check_folder():
