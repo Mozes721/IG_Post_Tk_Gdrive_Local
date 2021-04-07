@@ -20,7 +20,6 @@ DRIVE = discovery.build('drive', 'v3', http=creds.authorize(Http()))
 
 page_token = None
 
-
 #loop through the files prompt the user for input when matched assign id and name
 def get_file():
     files = img_files()
@@ -32,10 +31,6 @@ def get_file():
             name = file['name']
             #run the download_file function with the id and name of the found file
             download_file(id, name)
-         else:
-            print("The image you choose by the name of {} doesn't exist".format(choose_img))
-            
-            
 
 #loop through the image files in Gdrive
 def img_files():
@@ -63,6 +58,7 @@ def download_file(id, filename):
         
     
 
+        
        
    
     
