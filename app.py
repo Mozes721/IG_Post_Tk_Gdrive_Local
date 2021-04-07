@@ -2,7 +2,7 @@ import tkinter
 from instabot import Bot
 from checkIMG import choose_option, image
 from drive_list import image_input
-from tkinter import Label, Button
+from tkinter import Tk, Label, Button
 import tkinter as tk
 from PIL import ImageTk,Image
 import time
