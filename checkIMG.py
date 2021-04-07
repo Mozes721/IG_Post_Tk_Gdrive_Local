@@ -53,6 +53,7 @@ def check_folder():
                 else:
                     print('Wrong input given ')
                     check_folder()
+                    
             #choose a image from the directory 
             elif choose == '2':
                 show_pictures = []
