@@ -13,15 +13,12 @@ bot = Bot()
 
 choose_option()
 #get picture data from main choosing img function
-# if not image:
-#     picture = ''.join(choose_img)
-# else:
-#     picture = ''.join(image)
 time.sleep(3)
-if str(image) != '':
-    picture = ''.join(image)
-elif str(image_input) != '':
+if not image:
     picture = ''.join(image_input)
+else:
+    picture = ''.join(image)
+
 
 
 ###TKINTER GUI###
@@ -76,10 +73,11 @@ app.mainloop()
 
 
 ###Executing the post with choosen file###
-bot.login(username='IG_username', password='password')
+bot.login(username='IG_username', password='Password')
 
 text = app.callback
 bot.upload_photo(picture, caption=entry_text)
+
 
 
 
