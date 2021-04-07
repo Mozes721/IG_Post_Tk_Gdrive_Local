@@ -75,7 +75,6 @@ app.mainloop()
 ###Executing the post with choosen file###
 bot.login(username='IG_username', password='Password')
 
-text = app.callback
 bot.upload_photo(picture, caption=entry_text)
 
 
