@@ -66,6 +66,7 @@ class IGGUI(tk.Frame):
 
 #create tkinter instance and initialize the interpreter
 root = tkinter.Tk()
+root.title("IG posting")
 #assign it to the IGGUI class 
 app = IGGUI(master=root)
 #run the event loop
